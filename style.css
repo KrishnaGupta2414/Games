@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    background: #111;
+}
+
+
+.game {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+.start,
+.guess-game {
+    width: 100%;
+
+    max-width: 400px;
+}
+
+
+h1 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+
+    font-weight: 500;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid #777;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: white;
+}
+
+
+input::placeholder {
+    color: #aaa;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+button:hover {
+    background: #ddd;
+}
+
+
+p {
+    margin: 15px 0;
+}
+
+
+#message {
+    min-height: 20px;
+}
+
+
+#attempts {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+footer {
+    position: fixed;
+
+    bottom: 15px;
+
+    right: 20px;
+
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .start,
+    .guess-game {
+        max-width: 90%;
+    }
+
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="game">
+
+        <!-- START -->
+
+        <div class="start">
+
+            <h1>Number Guessing Game</h1>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <button id="startBtn">
+                Start Game
+            </button>
+
+        </div>
+
+
+        <!-- GAME -->
+
+        <div class="guess-game hidden">
+
+            <h1>Guess the Number</h1>
+
+            <p id="welcome"></p>
+
+            <p>
+                Guess a number between 1 and 100
+            </p>
+
+            <input
+                type="number"
+                id="guess"
+                placeholder="Enter your guess"
+            >
+
+            <button id="guessBtn">
+                Guess
+            </button>
+
+            <p id="message"></p>
+
+            <p id="attempts"></p>
+
+            <button id="restartBtn" class="hidden">
+             Restart Game
+            </button>
+
+        </div>
+
+
+        <footer>
+            © 2026 Guess the Number • Made by Krishna
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
